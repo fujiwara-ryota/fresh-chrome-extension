@@ -1,10 +1,10 @@
 // this code will be executed after page load
 (function() {
   const headerNotice = () => {
-    if (window.location.host !== '{target-host.com}') {
+    if (window.location.host !== '{host_name}') {
       return;
     }
-    const targets = document.querySelectorAll('.l-header__name');
+    const targets = document.querySelectorAll('{.target_class}');
     [...targets].forEach(target => {
       const text = target.textContent;
       if (text.indexOf('代理アカウント') !== -1) {
