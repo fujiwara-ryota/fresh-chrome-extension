@@ -1,0 +1,20 @@
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+.chrome-ex-header-blink {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 2s;
+  background-color: red;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.chrome-ex-header-notice {
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 0 10px;
+}
